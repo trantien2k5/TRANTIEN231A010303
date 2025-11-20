@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demo GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .box {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Website Demo</h1>
+
+    <div class="box">
+        <p>Xin chào! Đây là website demo được tạo bằng GitHub Pages.</p>
+        <p>Domain của tôi:</p>
+        <p><strong id="domain"></strong></p>
+    </div>
+
+    <script>
+        document.getElementById("domain").innerText = window.location.href;
+    </script>
+
+</body>
+</html>
